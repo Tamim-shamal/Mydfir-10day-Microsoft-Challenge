@@ -7,9 +7,53 @@ Day 9 of the 10-Day Microsoft SOC Challenge
 
 # Overview
 
-In this challenge, I investigated **Network Authentication Traffic Anomalies** using Microsoft Sentinel and KQL to detect suspicious patterns in authentication logs (SecurityEvent_CL). The main goal was to identify failed logon spikes, brute-force attempts, and abnormal process activity indicating possible network intrusion.
+**Why am I sharing this?**
 
-# [KQL Queries](./KQL-Queries.md)
+To demonstrate my ability to detect, analyze, and document network authentication anomalies within Microsoft Sentinel using real Windows event data (SecurityEvent_CL).
+
+**What I want someone reading my GitHub to understand about me:**
+
+That I can build detection logic in KQL, identify suspicious authentication activity like failed logon spikes or process-related events, and visualize these findings in a structured, SOC-ready format.
+
+# Project Overview
+
+## What this challenge is:
+
+This Day 9 SOC Challenge focused on detecting Network (Authentication) Traffic Anomalies by analyzing Windows Security Events using Microsoft Sentinel. The project emphasized identifying failed logon spikes, compromised accounts, and related process activity.
+
+## What tools I used:
+
+- Microsoft Sentinel
+
+- Azure Log Analytics Workspace
+
+- Kusto Query Language (KQL)
+
+- Microsoft Defender for Endpoint (data source)
+
+- MITRE ATT&CK Framework (T1110 – Brute Force)
+
+## What skills I practiced:
+
+- Querying and filtering event logs using KQL
+
+- Detecting failed logon spikes (Event ID 4625)
+
+- Analyzing process creation events (Event ID 4688)
+
+- Using mv-expand and regex to explore column structures
+
+- Visualizing anomalies in Sentinel Dashboards
+
+## What I built or investigated:
+
+- Queries to detect failed authentication spikes and top failing accounts
+
+- Identification of process-related fields within SecurityEvent_CL
+
+- A Sentinel Workbook dashboard to visualize authentication anomalies
+
+# [What You Did and Learned](./KQL-Queries.md)
 
 **1) Failed Logon Spikes (Event 4625)**
 
