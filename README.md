@@ -6,6 +6,6 @@ By Tamim Shamal
 Day 9 of the 10-Day Microsoft SOC Challenge
 
 # Overview
-This project investigates **Network Traffic Anomalies** using authentication patterns observed in Windows event logs (**SecurityEvent_CL**) within Microsoft Sentinel.
-The goal is to detect abnormal network logon behavior, such as repeated failed logons, sudden spikes in authentication attempts, or brute-force-style activity across multiple endpoints.
+
+In this challenge, I investigated **Network Authentication Traffic Anomalies** using Microsoft Sentinel and KQL to detect suspicious patterns in authentication logs (SecurityEvent_CL). The main goal was to identify failed logon spikes, brute-force attempts, and abnormal process activity indicating possible network intrusion.
 
