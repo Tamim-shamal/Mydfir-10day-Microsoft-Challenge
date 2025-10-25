@@ -100,10 +100,6 @@ This Day 9 SOC Challenge focused on detecting Network (Authentication) Traffic A
 - Table: Process Field Analysis from Event 4688
 
 # Summary of Results  
-### Microsoft Sentinel 10-Day SOC Challenge  
-**By Tamim Shamal**
-
----
 
 ## What I Can Now Do That I Couldn’t Before
 
@@ -113,8 +109,6 @@ Through this challenge, I developed hands-on expertise with **Microsoft Sentinel
 - **Use KQL** to explore, filter, and summarize complex log data in `SecurityEvent_CL`.  
 - **Create visual dashboards and automated detections** in Microsoft Sentinel to monitor authentication spikes, brute-force attempts, and suspicious process executions.  
 - **Correlate event data** across hosts and accounts for better incident context.  
-
----
 
 ## Most Impactful Part of the Challenge
 
@@ -127,8 +121,6 @@ This method allowed me to:
 
 > *“Learning to extract insights directly from raw event data was a real game changer for process-level threat detection.”*
 
----
-
 ## What I Want to Keep Improving
 
 Moving forward, I plan to continue enhancing my Sentinel and KQL skills by focusing on:
@@ -138,8 +130,6 @@ Moving forward, I plan to continue enhancing my Sentinel and KQL skills by focus
 - **Expanding dashboards** to cover both endpoint and network telemetry for a complete security overview.  
 - **Automating alert triage** by integrating KQL detections with playbooks (Logic Apps).  
 
----
-
 ## Resource List
 
 Here are the key references and learning materials that supported this project:
@@ -148,8 +138,6 @@ Here are the key references and learning materials that supported this project:
 - [Windows Security Audit Events](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4625)  
 - [MITRE ATT&CK – Brute Force (T1110)](https://attack.mitre.org/techniques/T1110/)  
 - [KQL Query Language Reference](https://learn.microsoft.com/en-us/azure/data-explorer/kql-quick-reference)  
-
----
 
 ## Reflection Summary
 
