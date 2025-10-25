@@ -1,6 +1,11 @@
 # KQL Queries
 
-## 1) Failed Logon Spikes (Event 4625)
+What the task was:
+Investigate authentication anomalies such as failed logon spikes (4625) and analyze process creation logs (4688) for correlation with suspicious activity.
+
+# Steps I Took
+
+## 1) Detected failed logon spikes (Event 4625)
 ```kusto
 SecurityEvent_CL
 | where EventID_s == "4625"
@@ -8,15 +13,18 @@ SecurityEvent_CL
 | where Failed > 20
 | order by Failed desc
 ```
+This helped me identify systems experiencing unusually high login failures — potential brute-force or misconfigured service accounts.
 
-## 2) Top Accounts with Failed Logons
+## 2) Found top accounts with failed logons (Event 4625)
 ```kusto
 SecurityEvent_CL
 | where EventID_s == "4625"
 | summarize Failed = count() by Account_s
 | top 10 by Failed desc
 ```
-## 3) Identify Process-Related Fields in SecurityEvent_CL
+This allowed me to quickly identify which accounts were most often targeted or misused.
+
+## 3) Identified process-related fields in logs (Event 4688)
 
 ``` kusto
 SecurityEvent_CL
@@ -27,5 +35,5 @@ SecurityEvent_CL
 | where k matches regex                       // Filter only for relevant columns
     @"(?i)(newprocess|image|process|cmd|command|path|exe|parent|eventdata)"
 | order by rows desc                          // Sort descending to show the most common fields first
-
 ```
+This helped me explore available fields in SecurityEvent_CL to better understand process activity for future detections.
