@@ -98,3 +98,5 @@ This Day 9 SOC Challenge focused on detecting Network (Authentication) Traffic A
 - Bar Chart: Top 10 Accounts by Failed Logons
 
 - Table: Process Field Analysis from Event 4688
+
+
