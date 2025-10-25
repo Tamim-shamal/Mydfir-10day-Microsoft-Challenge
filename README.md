@@ -99,4 +99,66 @@ This Day 9 SOC Challenge focused on detecting Network (Authentication) Traffic A
 
 - Table: Process Field Analysis from Event 4688
 
+# Summary of Results  
+### Microsoft Sentinel 10-Day SOC Challenge  
+**By Tamim Shamal**
+
+---
+
+## What I Can Now Do That I Couldn’t Before
+
+Through this challenge, I developed hands-on expertise with **Microsoft Sentinel** and **KQL (Kusto Query Language)** for threat detection and analysis. I can now confidently:
+
+- **Detect authentication anomalies** using Event IDs **4625** (failed logons) and **4688** (process creation).  
+- **Use KQL** to explore, filter, and summarize complex log data in `SecurityEvent_CL`.  
+- **Create visual dashboards and automated detections** in Microsoft Sentinel to monitor authentication spikes, brute-force attempts, and suspicious process executions.  
+- **Correlate event data** across hosts and accounts for better incident context.  
+
+---
+
+## Most Impactful Part of the Challenge
+
+The most valuable skill I learned was using the KQL functions **`mv-expand`** and **regular expressions (regex)** to explore dynamic fields and discover hidden telemetry within **Event 4688 (process creation)** logs.  
+
+This method allowed me to:
+- Identify **relevant process-related fields** (`NewProcessName`, `CommandLine`, etc.).  
+- Understand **how process execution telemetry is structured** within Windows Security Events.  
+- Improve **data normalization and detection coverage** by knowing exactly which fields contain valuable indicators.  
+
+> *“Learning to extract insights directly from raw event data was a real game changer for process-level threat detection.”*
+
+---
+
+## What I Want to Keep Improving
+
+Moving forward, I plan to continue enhancing my Sentinel and KQL skills by focusing on:
+
+- **Combining authentication and process data** to build correlated detections (e.g., failed logon followed by PowerShell execution).  
+- **Integrating threat intelligence (TI) enrichment** such as IP reputation and external mapping.  
+- **Expanding dashboards** to cover both endpoint and network telemetry for a complete security overview.  
+- **Automating alert triage** by integrating KQL detections with playbooks (Logic Apps).  
+
+---
+
+## Resource List
+
+Here are the key references and learning materials that supported this project:
+
+- [Microsoft Sentinel Documentation](https://learn.microsoft.com/en-us/azure/sentinel/)  
+- [Windows Security Audit Events](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4625)  
+- [MITRE ATT&CK – Brute Force (T1110)](https://attack.mitre.org/techniques/T1110/)  
+- [KQL Query Language Reference](https://learn.microsoft.com/en-us/azure/data-explorer/kql-quick-reference)  
+
+---
+
+## Reflection Summary
+
+This challenge solidified my ability to think like a **SOC Analyst** — turning raw telemetry into actionable intelligence.  
+From failed logons to process analysis, I learned how to **detect early signs of compromise** using Sentinel’s power.  
+
+> _“Microsoft Sentinel is not just a SIEM — it’s an investigation platform that empowers analysts to see the full picture.”_
+
+
+End of the page
+
 
