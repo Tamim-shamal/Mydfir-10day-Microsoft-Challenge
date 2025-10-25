@@ -89,7 +89,7 @@ This Day 9 SOC Challenge focused on detecting Network (Authentication) Traffic A
 
 **Microsoft Sentinel Workbook Screenshot:**
 
-*Network Authentication Anomalies Dashboard*
+[*Network Authentication Anomalies Dashboard*](./Network%20Authentication%20Anomalies%20Dashboard.md)
 
 ## Includes:
 
