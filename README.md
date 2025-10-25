@@ -84,3 +84,17 @@ This Day 9 SOC Challenge focused on detecting Network (Authentication) Traffic A
 - Output: A frequency list of field names matching process/image/cmd/…, sorted by how often they appear.
 
 - How to act: Take the top relevant column (e.g., Image or EventData_s) and use it in follow-up detections (PowerShell encoded commands, downloads, Defender tampering, suspicious parents).
+
+# Screenshots or Visuals
+
+**Microsoft Sentinel Workbook Screenshot:**
+
+*Network Authentication Anomalies Dashboard*
+
+## Includes:
+
+- Line Chart: Failed Logons Per Hour
+
+- Bar Chart: Top 10 Accounts by Failed Logons
+
+- Table: Process Field Analysis from Event 4688
